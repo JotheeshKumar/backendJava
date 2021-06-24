@@ -73,8 +73,11 @@ public class ProductDetails {
 			pd.products();
 
 		}
-		System.out.println("Enter 1 to diplay all products \n Enter 2 display search product");
-		int key = sc.nextInt();
+		int key;
+		do {
+		System.out.println("Enter 1 to diplay all products \n Enter 2 display search product \n Enter 3 to exit..");
+		
+		 key = sc.nextInt();
 		switch (key) {
 		case 1:
 			pd.productsDisp();
@@ -86,7 +89,7 @@ public class ProductDetails {
 			break;
 
 		}
-
+		}while(key!=3);
 	}
 
 }
